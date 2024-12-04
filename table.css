@@ -1,0 +1,50 @@
+#schedule table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: separate; /* Для закруглення кутів */
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 10px; /* Закруглення кутів */
+    overflow: hidden; /* Щоб кути виглядали акуратно */
+}
+
+#schedule table th, #schedule table td {
+    padding: 12px;
+    text-align: center;
+}
+
+#schedule table th {
+    background-color: #DDDDDD;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+}
+
+#schedule table td {
+    background: #EEEEEE;
+    color: black;
+}
+
+#schedule table tr:first-child th:first-child {
+    border-top-left-radius: 10px; /* Закруглення верхнього лівого кута */
+}
+
+#schedule table tr:first-child th:last-child {
+    border-top-right-radius: 10px; /* Закруглення верхнього правого кута */
+}
+
+#schedule table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* Закруглення нижнього лівого кута */
+}
+
+#schedule table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* Закруглення нижнього правого кута */
+}
+
+input {
+    margin: 10px auto;
+    display: block;
+    padding: 8px;
+    width: 80%;
+}

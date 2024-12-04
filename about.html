@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="element.css">
+</head>
+<body>
+    <header>
+        <div class="account-icon">
+            <a href="login.html" title="Карта клієнта">
+                <img src="./image/icon.png" alt="Вхід">
+            </a>
+        </div>
+        <h1>Gym World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="coaches.html">Тренерський склад</a></li>
+                <li><a href="train.html">Види тренувань</a></li>
+                <li><a href="schedule.html">Графік занять</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <section id="schedule">
+        <h2>Графік роботи</h2>
+        <table>
+            <tr>
+                <th>Понеділок</th>
+                <th>Вівторок</th>
+                <th>Середа</th>
+                <th>Четвер</th>
+                <th>П'ятниця</th>
+                <th>Субота</th>
+                <th>Неділя</th>
+                
+            </tr>
+            <tr>
+                <td>9:00 - 21:00</td>
+                <td>9:00 - 21:00</td>
+                <td>9:00 - 21:00</td>
+                <td>9:00 - 21:00</td>
+                <td>10:00 - 23:00</td>
+                <td>10:00 - 23:00</td>
+                <td>Вихідний</td>
+            </tr>
+        </table>
+        
+        <h2>Розташування</h2>
+        <p>Наш зал знаходиться за адресою: м. Вінниця, вул. Хмельницьке шосе, 95</p>
+        <div class="map-wrapper">
+            <link rel="stylesheet" href="map.css">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.6089787829906!2d28.40858847598464!3d49.23388707420892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5c5eb3978a07%3A0x591bf4ded045dfa!2z0JLQuNC90L3QuNGG0LrQuNC5INC90LDRhtC40L7QvdCw0LvRjNC90YvQuSDRgtC10YXQvdC40YfQtdGB0LrQuNC5INGD0L3QuNCy0LXRgNGB0LjRgtC10YI!5e1!3m2!1sru!2sua!4v1733264661253!5m2!1sru!2sua" 
+            width="1000" 
+            height="650"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <h2>Ми у соціальних мережах</h2>
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-link">
+                <img src="./image/facebook.png" alt="Facebook" class="social-logo">
+                Facebook
+            </a>
+            <a href="https://twitter.com" class="social-link">
+                <img src="./image/twit.png" alt="Twitter" class="social-logo">
+                Twitter
+            </a>
+            <a href="https://instagram.com" class="social-link">
+                <img src="./image/inst.png" alt="Instagram" class="social-logo">
+                Instagram
+            </a>
+        </div>
+        <h2 class="left-align">Контактні дані</h2>
+        <ul>
+            <li>+38 (044) 123-45-67</li>
+            <br>
+            <li>+38 (050) 987-65-43</li>
+            <br>
+            <li>info@gymexample.com</li> 
+        </ul>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Спортивний зал "Gym World". Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

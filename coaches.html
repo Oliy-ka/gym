@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coach.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="account-icon">
+            <a href="login.html" title="Карта клієнта">
+                <img src="./image/icon.png" alt="Вхід">
+            </a>
+        </div>
+        <h1>Gym World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="train.html">Види тренувань</a></li>
+                <li><a href="schedule.html">Графік занять</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">    
+    <section id="coaches">
+        <h2>Тренерський склад:</h2>
+
+        <div class="coaches">
+            <div class="coach-card">
+                <img src="./image/ihor.png" alt="Ihor">
+                <h3>Ігор Шевченко</h3>
+                <p>Fitness</p>
+                <button class="info-btn" data-info="Ігор — фітнес-тренер з 9-річним досвідом у сфері фітнесу. 
+                Він спеціалізується на комплексних тренуваннях для покращення витривалості, сили та загальної фізичної форми. 
+                Ігор працює з людьми, які хочуть схуднути, покращити свою кардіо витривалість або просто підтримувати хорошу фізичну форму. 
+                Його тренування завжди різноманітні та енергійні, що сприяє досягненню результатів за короткий час.">Дізнатись більше</button>
+            </div>
+            <div class="coach-card">
+                <img src="./image/marina.png" alt="Marina">
+                <h3>Марина Дудник</h3>
+                <p>TRX</p>
+                <button class="info-btn" data-info="Марина — сертифікований тренер з TRX (тренування з використанням підвісних систем) з 5-річним досвідом. 
+                Вона спеціалізується на функціональних тренуваннях, які допомагають зміцнити м'язи всього тіла, покращити стабільність та рівновагу. 
+                TRX — це ідеальне тренування для тих, хто хоче отримати міцне, гармонійно розвинене тіло, використовуючи мінімум обладнання.">Дізнатись більше</button>
+            </div>
+        </div>
+
+        <div class="coaches">
+            <div class="coach-card">
+                <img src="./image/vitaliy.png" alt="Vitaliy">
+                <h3>Віталій Бондаренко</h3>
+                <p>CrossFit</p>
+                <button class="info-btn" data-info="Віталій — тренер з кросфіту, який спеціалізується на високопродуктивних тренуваннях для досягнення швидких та ефективних результатів. 
+                З 6-річним досвідом роботи він допомагає спортсменам і початківцям досягти високих результатів у силових і кардіо тренуваннях, покращити витривалість і загальну фізичну форму.">Дізнатись більше</button>
+            </div>
+            <div class="coach-card">
+                <img src="./image/julia.png" alt="Julia">
+                <h3>Юлія Черненко</h3>
+                <p>Yoga</p>
+                <button class="info-btn" data-info="Юлія — тренер йоги та розтяжки з 4-річним досвідом. 
+                Вона спеціалізується на покращенні гнучкості та розвитку балансу через комбінацію йоги та розтягувальних вправ. 
+                Юлія працює з людьми, які хочуть розслабитися, зняти стрес та поліпшити свою гнучкість, пропонуючи індивідуальні програми для досягнення кращих результатів у короткий термін.">Дізнатись більше</button>
+            </div>
+        </div>
+
+        <div class="coaches">
+            <div class="coach-card">
+                <img src="./image/Oleh.png" alt="Oleh">
+                <h3>Олег Петров</h3>
+                <p>CrossFit</p>
+                <button class="info-btn" data-info="Олег — досвідчений тренер з кросфіту з 10-річним стажем. 
+                Працюючи в різних спортивних клубах, він допомагає клієнтам досягати високих результатів у фізичній підготовці, використовуючи комплексні тренування, що включають важку атлетику, кардіо та гімнастику. 
+                Олег акцентує увагу на розвитку сили, витривалості та швидкості, що робить його тренування ідеальними для всіх рівнів підготовки.">Дізнатись більше</button>
+            </div>
+            <div class="coach-card">
+                <img src="./image/ann.png" alt="Anna">
+                <h3>Анна Іванова</h3>
+                <p>Yoga</p>
+                <button class="info-btn" data-info="Анна — сертифікований тренер з йоги з 6-річним досвідом. 
+                Вона спеціалізується на класичних йогівських практиках, які поєднують фізичні вправи, дихальні техніки та медитацію. 
+                Її заняття допомагають покращити гнучкість, баланс, а також знижують стрес та тривогу. 
+                Анна працює з людьми будь-якого віку і рівня підготовки, надаючи індивідуальний підхід до кожного учасника.">Дізнатись більше</button>
+            </div>
+        </div>
+
+        <div class="coaches">
+            <div class="coach-card">
+                <img src="./image/max.png" alt="Max">
+                <h3>Максим Ковальчук</h3>
+                <p>Stretching</p>
+                <button class="info-btn" data-info="Максим — тренер з розтяжки і гнучкості з 7-річним досвідом. 
+                Він спеціалізується на покращенні гнучкості м'язів і суглобів через різноманітні вправи на розтягування. 
+                Під його керівництвом клієнти досягають кращих результатів у підвищенні діапазону рухів, зменшенні м'язової напруги та запобіганні травмам. 
+                Максим працює з людьми, які хочуть покращити свою рухливість та загальний фізичний стан.">Дізнатись більше</button>
+            </div>
+            <div class="coach-card">
+                <img src="./image/kate.png" alt="Kate">
+                <h3>Катерина Сидоренко</h3>
+                <p>Gym</p>
+                <button class="info-btn" data-info="Катерина — професійний тренер із тренажерного залу з 8-річним досвідом. 
+                Вона спеціалізується на силових тренуваннях і розробці індивідуальних програм для досягнення бажаних результатів. 
+                Її заняття включають роботу з вільними вагами, тренажерами та кардіо, що допомагає клієнтам побудувати м'язову масу, зменшити жирові відкладення та покращити загальну фізичну форму.">Дізнатись більше</button>
+            </div>
+        </div>
+    
+        <!-- Модальне вікно -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-info">Інформація про тренера буде тут.</p>
+            </div>
+        </div>
+
+    </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("modal");
+            const modalInfo = document.getElementById("modal-info");
+            const closeModal = document.querySelector(".modal .close");
+            const buttons = document.querySelectorAll(".info-btn");
+
+            // Функція для відкриття модального вікна
+            buttons.forEach((button) => {
+                button.addEventListener("click", function () {
+                    const info = button.getAttribute("data-info");
+                    modalInfo.textContent = info;
+                    modal.style.display = "flex"; // Покажемо модальне вікно
+                });
+            });
+
+            // Закрити модальне вікно
+            closeModal.addEventListener("click", function () {
+                modal.style.display = "none"; // Сховати модальне вікно
+            });
+
+            // Закриття при натисканні поза модальним вікном
+            modal.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none"; // Сховати модальне вікно при натисканні поза ним
+                }
+            });
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Спортивний зал "Gym World". Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

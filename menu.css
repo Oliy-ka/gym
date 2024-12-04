@@ -1,0 +1,134 @@
+/* Загальний стиль 
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: url(/logo.png) no-repeat center/cover;
+
+}*/
+
+.menu {
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    top: 1%;
+    right: 1%;
+    background: black; 
+    border-radius: 8px;
+}
+
+.menu span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.menu span,
+.menu span::before,
+.menu span::after{
+   display: block;
+    width: 25px;
+    right: 0;
+    height: 3px;
+    background-color: #fff;
+    transition-duration: .3s;
+}
+
+.menu span::before,
+.menu span::after{
+    content: '';
+    position: absolute;
+}
+
+.menu span::before{
+    top: -9px;
+    width: 20px;
+}
+
+.menu span::after{
+    top: 9px;
+    width: 33px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu.clicked span{
+    background-color: transparent;
+}
+
+.menu.clicked span::before{
+    transform: translateY(9px) rotate(45deg);
+    width: 33px;
+}
+
+.menu.clicked span::after {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+#nav {
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0,.8);
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
+    padding: 100px 40px 60px;
+    transition: transform 1s ease-in;
+    transform: translateX(100%);
+}
+
+#nav.show {
+    transform: translateX(0px);
+}
+
+#nav ul.nav-list li a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    transition: all .3s ease;
+    font-family: 'Barlow Condenced', sans-serif;
+}
+
+#nav ul.nav-list li a:hover {
+    color: dodgerblue;
+}
+
+#nav ul.nav-list li {
+    list-style: circle;
+    color: #fff;
+    transition: all .3s ease;
+    transform: translateX(45px);
+    opacity: 0;
+}
+
+#nav.show ul.nav-list li {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+#nav.show ul.nav-list li:nth-child(1) {
+    transition-delay: 0.45s;
+}
+
+#nav.show ul.nav-list li:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+#nav.show ul.nav-list li:nth-child(3) {
+    transition-delay: 0.75s;
+}
+
+#nav.show ul.nav-list li:nth-child(4) {
+    transition-delay: 0.9s;
+}
+
+#nav.show ul.nav-list li:nth-child(5) {
+    transition-delay: 1.05s;
+}

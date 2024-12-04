@@ -1,0 +1,102 @@
+/* Стиль для таблиці */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.schedule-table th {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.schedule-table td {
+    background-color: #f4f4f4;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table tr:hover {
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+}
+
+.schedule-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.schedule-table tr:nth-child(odd) td {
+    background-color: #fff;
+}
+
+.schedule-table td:hover {
+    background-color: #ff9800;
+    color: black;
+}
+
+/* Базовий стиль для посилань */
+a {
+    text-decoration: none; /* Прибираємо стандартне підкреслення */
+    color: #ff9800; /* Основний колір для посилань */
+    font-weight: bold; /* Виділяємо текст */
+    transition: color 0.3s, transform 0.2s; /* Плавний перехід для кольору і ефекту */
+}
+
+/* Ефект наведення */
+a:hover {
+    color: #e68900; /* Трохи темніший відтінок при наведенні */
+    transform: scale(1.05); /* Легке збільшення тексту */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Тінь для підкреслення */
+}
+
+/* Ефект для активного посилання */
+a:active {
+    color: #c67000; /* Темніший відтінок при натисканні */
+    transform: scale(0.95); /* Легке зменшення */
+}
+
+/* Посилання в темному фоні */
+a.dark {
+    color: #fff; /* Білий колір тексту для темного фону */
+}
+
+a.dark:hover {
+    color: #ff9800; /* Основний колір при наведенні */
+    text-shadow: 0 2px 5px rgba(255, 152, 0, 0.6); /* Яскрава тінь */
+}
+
+/* Кнопкоподібний стиль посилань */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Основний колір фону */
+    color: #fff;
+    border-radius: 5px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легка тінь */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a.button:hover {
+    background-color: #e68900; /* Темніший відтінок фону */
+    transform: translateY(-2px); /* Легке підняття при наведенні */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Сильніша тінь */
+}
+
+a.button:active {
+    background-color: #c67000; /* Темніший відтінок при натисканні */
+    transform: translateY(2px); /* Натискання */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Зменшення тіні */
+}

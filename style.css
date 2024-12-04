@@ -1,0 +1,170 @@
+/* Загальний стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    background: /*#ff9800*/ url(./image/back.png);
+    background-size: cover; /* Відповідає за адаптацію фону до розміру екрана */
+    background-position: center center; /* Центрує зображення */
+    background-attachment: fixed; /* Фіксує фон під час прокручування */
+    background-repeat: no-repeat; /* Запобігає повторенню зображення */
+}
+
+/* Стиль для заголовка та навігації*/
+header {
+    text-align: center;
+    padding: 1rem;
+    background: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .account-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header .account-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+header .account-icon img:hover {
+    transform: scale(1.1); 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9800;
+}
+/* Секції */
+section {
+    padding: 2rem;
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center; /* Центруємо по горизонталі */
+    width: 80%; /* Ширина контейнера — 80% від батьківського елемента */
+    max-width: 1000px; /* Максимальна ширина контейнера — 1000px */
+    margin: 0 auto; /* Центруємо контейнер */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ff9800;
+}
+
+.main {
+    font-family: 'Arial', sans-serif; /* Вибір шрифта */
+    font-size: 1.2rem; /* Розмір шрифта для абзаців */
+    line-height: 1.6; /* Збільшення відстані між рядками */
+    text-align: left; /* Центрування тексту */
+    color: black; /* М'який темно-сірий колір */
+    margin: 10px 0; /* Відступи між абзацами */
+}
+
+.left-align{
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #ff9800;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: black;
+    /* position: sticky; Закріплює футер */
+     /*bottom: 0; Прив'язує футер до низу */
+    /*width: 100%;  Забезпечує ширину футера на весь екран */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматичне налаштування колонок */
+    gap: 15px; /* Відступи між зображеннями */
+    padding: 20px;
+    max-width: 1200px; /* Максимальна ширина галереї */
+    width: 100%; /* Ширина галереї 100% */
+}
+
+.gallery-item {
+    border-radius: 8px; /* Закруглені кути */
+    overflow: hidden; /* Приховуємо зайві частини зображення за межами контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+.gallery-item img {
+    width: 100%; /* Зображення заповнюють всю ширину контейнера */
+    height: auto; /* Зберігається пропорція зображення */
+    display: block; /* Усуваємо зайві пробіли навколо зображення */
+    transition: transform 0.3s ease; /* Анімація при наведенні */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Легка анімація при наведенні: збільшення зображення */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Центруємо всі елементи по горизонталі */
+    gap: 20px; /* Відступи між посиланнями */
+}
+
+.social-link {
+    display: flex;
+    align-items: center; /* Вирівнюємо іконку і текст по вертикалі */
+    text-decoration: none; /* Усуваємо підкреслення */
+    color: #ff9800; /* Колір тексту */
+}
+
+.social-logo {
+    width: 24px; /* Розмір іконки */
+    height: 24px; /* Розмір іконки */
+    border-radius: 50%; /* Кругла форма */
+    margin-right: 8px; /* Відступ між іконкою і текстом */
+}
+
+.social-link:hover {
+    color: #0077b5; /* Колір при наведенні (наприклад, для Facebook) */
+}
+
+.social-link:hover .social-logo {
+    opacity: 0.7; /* Трохи прозорість іконки при наведенні */
+}
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
